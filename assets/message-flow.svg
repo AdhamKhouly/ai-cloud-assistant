@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="660" viewBox="0 0 1200 660" role="img" aria-label="Message flow. A Discord message goes to the intent router, which picks a deterministic route, a retrieval route that gathers source evidence, or a generative route, and all end in one reply. A separate branch for changes: resolve the exact target, preview, user confirms, apply once, guarded so a double click cannot do the action twice.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowWarm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="660" rx="18" fill="#0f172a"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="middle">
+
+    <!-- LEFT: a question -->
+    <text x="400" y="40" font-size="12" fill="#64748b" letter-spacing="2">A QUESTION</text>
+
+    <rect x="290" y="56" width="220" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="312" y="74" width="24" height="16" rx="5" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M 318 90 L 318 96 L 325 90" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round"/>
+    <text x="412" y="90" font-size="16" font-weight="600" fill="#f1f5f9">Discord message</text>
+    <line x1="400" y1="112" x2="400" y2="150" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="290" y="152" width="220" height="60" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="400" y="178" font-size="16" font-weight="700" fill="#f1f5f9">Intent Router</text>
+    <text x="400" y="198" font-size="11" fill="#94a3b8">one typed intent, no model</text>
+
+    <!-- fan out -->
+    <path d="M 400 212 L 400 240 L 150 240 L 150 268" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="400" y1="212" x2="400" y2="268" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <path d="M 400 212 L 400 240 L 650 240 L 650 268" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="50" y="270" width="200" height="70" rx="12" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+    <text x="150" y="298" font-size="15" font-weight="700" fill="#f1f5f9">Deterministic Route</text>
+    <text x="150" y="318" font-size="11" fill="#94a3b8">structured state, zero model calls</text>
+
+    <rect x="300" y="270" width="200" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="400" y="298" font-size="15" font-weight="700" fill="#f1f5f9">Retrieval</text>
+    <text x="400" y="318" font-size="11" fill="#94a3b8">registered sources for this week</text>
+
+    <rect x="550" y="270" width="200" height="70" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="650" y="298" font-size="15" font-weight="700" fill="#f1f5f9">Generative Route</text>
+    <text x="650" y="318" font-size="11" fill="#94a3b8">one model call, evidence attached</text>
+
+    <line x1="400" y1="340" x2="400" y2="378" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <rect x="300" y="380" width="200" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="400" y="405" font-size="15" font-weight="600" fill="#f1f5f9">Source Evidence</text>
+    <text x="400" y="424" font-size="11" fill="#94a3b8">with provenance, never generated notes</text>
+
+    <!-- merge -->
+    <path d="M 150 340 L 150 480 L 400 480" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <path d="M 650 340 L 650 480 L 400 480" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="400" y1="440" x2="400" y2="478" stroke="#60a5fa" stroke-width="2"/>
+    <line x1="400" y1="480" x2="400" y2="516" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="290" y="518" width="220" height="56" rx="12" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="400" y="546" font-size="16" font-weight="700" fill="#f1f5f9">Reply</text>
+    <text x="400" y="565" font-size="11" fill="#94a3b8">exactly one message back</text>
+
+    <text x="400" y="620" font-size="12" fill="#64748b">The router decides before anything runs. Most turns never reach the model.</text>
+
+    <!-- divider -->
+    <line x1="800" y1="40" x2="800" y2="620" stroke="#1e293b" stroke-width="2"/>
+
+    <!-- RIGHT: a change -->
+    <text x="1000" y="40" font-size="12" fill="#64748b" letter-spacing="2">A CHANGE</text>
+
+    <rect x="890" y="56" width="220" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1000" y="80" font-size="15" font-weight="600" fill="#f1f5f9">Mutation request</text>
+    <text x="1000" y="99" font-size="11" fill="#94a3b8">"mark my overdue tasks complete"</text>
+    <line x1="1000" y1="112" x2="1000" y2="150" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+
+    <rect x="890" y="152" width="220" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1000" y="176" font-size="15" font-weight="600" fill="#f1f5f9">Resolve exact target</text>
+    <text x="1000" y="195" font-size="11" fill="#94a3b8">from canonical state, not from a guess</text>
+    <line x1="1000" y1="208" x2="1000" y2="246" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+
+    <rect x="890" y="248" width="220" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1000" y="272" font-size="15" font-weight="600" fill="#f1f5f9">Preview</text>
+    <text x="1000" y="291" font-size="11" fill="#94a3b8">the pinned items, before anything moves</text>
+    <line x1="1000" y1="304" x2="1000" y2="342" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+
+    <rect x="890" y="344" width="220" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1000" y="368" font-size="15" font-weight="600" fill="#f1f5f9">User confirms</text>
+    <text x="1000" y="387" font-size="11" fill="#94a3b8">a button or a bare "yes", nothing else</text>
+    <line x1="1000" y1="400" x2="1000" y2="438" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+
+    <rect x="890" y="440" width="220" height="56" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="1000" y="464" font-size="15" font-weight="700" fill="#f1f5f9">Apply once</text>
+    <text x="1000" y="483" font-size="11" fill="#94a3b8">exactly what was previewed</text>
+
+    <!-- exactly-once guard -->
+    <rect x="850" y="524" width="300" height="72" rx="14" fill="#141d30" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="1000" y="551" font-size="14" font-weight="700" fill="#f59e0b">Exactly-once guard</text>
+    <text x="1000" y="573" font-size="12" fill="#cbd5e1">A double click should not do the action twice.</text>
+    <text x="1000" y="620" font-size="12" fill="#64748b">Reading is free. Writing is narrow, previewed, and done once.</text>
+  </g>
+</svg>

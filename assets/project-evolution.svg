@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Project evolution, a conceptual sequence: Discord bot, structured task state, source ingestion, living weekly notes, cloud control plane, local worker, deterministic routing, safer confirmations and testing.">
+  <rect width="1200" height="420" rx="18" fill="#0f172a"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="600" y="52" font-size="24" font-weight="700" fill="#f1f5f9">How the project grew</text>
+    <text x="600" y="78" font-size="13" fill="#94a3b8">A conceptual sequence, not a dated history. Each stage exists because the one before it was not enough.</text>
+
+    <!-- spine -->
+    <line x1="60" y1="230" x2="1140" y2="230" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- stage 1 -->
+    <line x1="100" y1="214" x2="100" y2="192" stroke="#334155" stroke-width="2"/>
+    <circle cx="100" cy="230" r="17" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="100" y="235" font-size="13" font-weight="700" fill="#f1f5f9">1</text>
+    <text x="100" y="168" font-size="15" font-weight="600" fill="#e2e8f0">Discord bot</text>
+    <text x="100" y="186" font-size="11" fill="#64748b">it could answer a few things</text>
+
+    <!-- stage 2 -->
+    <line x1="243" y1="246" x2="243" y2="268" stroke="#334155" stroke-width="2"/>
+    <circle cx="243" cy="230" r="17" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="243" y="235" font-size="13" font-weight="700" fill="#f1f5f9">2</text>
+    <text x="243" y="290" font-size="15" font-weight="600" fill="#e2e8f0">Structured task state</text>
+    <text x="243" y="308" font-size="11" fill="#64748b">a real store, not a prompt</text>
+
+    <!-- stage 3 -->
+    <line x1="386" y1="214" x2="386" y2="192" stroke="#334155" stroke-width="2"/>
+    <circle cx="386" cy="230" r="17" fill="#1e293b" stroke="#60a5fa" stroke-width="2.5"/>
+    <text x="386" y="235" font-size="13" font-weight="700" fill="#f1f5f9">3</text>
+    <text x="386" y="168" font-size="15" font-weight="600" fill="#e2e8f0">Source ingestion</text>
+    <text x="386" y="186" font-size="11" fill="#64748b">files become registered sources</text>
+
+    <!-- stage 4 -->
+    <line x1="529" y1="246" x2="529" y2="268" stroke="#334155" stroke-width="2"/>
+    <circle cx="529" cy="230" r="17" fill="#1e293b" stroke="#22d3ee" stroke-width="2.5"/>
+    <text x="529" y="235" font-size="13" font-weight="700" fill="#f1f5f9">4</text>
+    <text x="529" y="290" font-size="15" font-weight="600" fill="#e2e8f0">Living weekly notes</text>
+    <text x="529" y="308" font-size="11" fill="#64748b">notes that follow the material</text>
+
+    <!-- stage 5 -->
+    <line x1="672" y1="214" x2="672" y2="192" stroke="#334155" stroke-width="2"/>
+    <circle cx="672" cy="230" r="17" fill="#1e293b" stroke="#22d3ee" stroke-width="2.5"/>
+    <text x="672" y="235" font-size="13" font-weight="700" fill="#f1f5f9">5</text>
+    <text x="672" y="168" font-size="15" font-weight="600" fill="#e2e8f0">Cloud control plane</text>
+    <text x="672" y="186" font-size="11" fill="#64748b">the parts that must stay awake</text>
+
+    <!-- stage 6 -->
+    <line x1="815" y1="246" x2="815" y2="268" stroke="#334155" stroke-width="2"/>
+    <circle cx="815" cy="230" r="17" fill="#1e293b" stroke="#22d3ee" stroke-width="2.5"/>
+    <text x="815" y="235" font-size="13" font-weight="700" fill="#f1f5f9">6</text>
+    <text x="815" y="290" font-size="15" font-weight="600" fill="#e2e8f0">Local worker</text>
+    <text x="815" y="308" font-size="11" fill="#64748b">generation and transcription near the files</text>
+
+    <!-- stage 7 -->
+    <line x1="958" y1="214" x2="958" y2="192" stroke="#334155" stroke-width="2"/>
+    <circle cx="958" cy="230" r="17" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="958" y="235" font-size="13" font-weight="700" fill="#f1f5f9">7</text>
+    <text x="958" y="168" font-size="15" font-weight="600" fill="#e2e8f0">Deterministic routing</text>
+    <text x="958" y="186" font-size="11" fill="#64748b">the model stops answering what it should not</text>
+
+    <!-- stage 8 -->
+    <line x1="1101" y1="246" x2="1101" y2="268" stroke="#334155" stroke-width="2"/>
+    <circle cx="1101" cy="230" r="17" fill="#1e293b" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="1101" y="235" font-size="13" font-weight="700" fill="#f1f5f9">8</text>
+    <text x="1101" y="290" font-size="15" font-weight="600" fill="#e2e8f0">Safer confirmations</text>
+    <text x="1101" y="308" font-size="15" font-weight="600" fill="#e2e8f0">and testing</text>
+    <text x="1101" y="326" font-size="11" fill="#64748b">preview, pin, confirm, once</text>
+
+    <!-- legend -->
+    <g text-anchor="start" font-size="12" fill="#94a3b8">
+      <circle cx="430" cy="382" r="5" fill="#60a5fa"/><text x="444" y="386">making it work</text>
+      <circle cx="580" cy="382" r="5" fill="#22d3ee"/><text x="594" y="386">making it a system</text>
+      <circle cx="750" cy="382" r="5" fill="#f59e0b"/><text x="764" y="386">making it trustworthy</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="Deadline pipeline: syllabus, slides, transcript and recording transcript go through extraction into deadline evidence and claims, then resolution rules, then a canonical deadline and a Discord answer; conflicting evidence is preserved and clarification requested.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowWarm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="700" rx="18" fill="#0f172a"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="middle">
+
+    <!-- sources -->
+    <text x="145" y="60" font-size="12" fill="#64748b" letter-spacing="2">WHERE DEADLINES HIDE</text>
+    <rect x="40" y="90" width="210" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="145" y="124" font-size="16" font-weight="600" fill="#f1f5f9">Syllabus</text>
+    <rect x="40" y="170" width="210" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="145" y="204" font-size="16" font-weight="600" fill="#f1f5f9">Slides</text>
+    <rect x="40" y="250" width="210" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="145" y="284" font-size="16" font-weight="600" fill="#f1f5f9">Transcript</text>
+    <rect x="40" y="330" width="210" height="56" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="145" y="358" font-size="16" font-weight="600" fill="#f1f5f9">Recording Transcript</text>
+    <text x="145" y="376" font-size="11" fill="#94a3b8">transcribed locally</text>
+
+    <line x1="250" y1="118" x2="318" y2="234" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="250" y1="198" x2="318" y2="243" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="250" y1="278" x2="318" y2="253" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="250" y1="358" x2="318" y2="262" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- extraction -->
+    <rect x="320" y="210" width="190" height="76" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="415" y="243" font-size="16" font-weight="700" fill="#f1f5f9">EXTRACTION</text>
+    <text x="415" y="264" font-size="11" fill="#94a3b8">dates and what they belong to</text>
+    <line x1="510" y1="248" x2="558" y2="248" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- claims -->
+    <rect x="560" y="210" width="210" height="76" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="665" y="237" font-size="15" font-weight="700" fill="#f1f5f9">DEADLINE EVIDENCE</text>
+    <text x="665" y="255" font-size="13" font-weight="600" fill="#cbd5e1">/ CLAIMS</text>
+    <text x="665" y="274" font-size="11" fill="#94a3b8">kept, never overwritten</text>
+    <line x1="770" y1="248" x2="828" y2="248" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- resolution -->
+    <rect x="830" y="210" width="210" height="76" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="935" y="240" font-size="16" font-weight="700" fill="#f1f5f9">RESOLUTION RULES</text>
+    <text x="935" y="259" font-size="11" fill="#94a3b8">source authority, explicit updates,</text>
+    <text x="935" y="273" font-size="11" fill="#94a3b8">your confirmed corrections</text>
+    <line x1="935" y1="286" x2="935" y2="348" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1000" y="322" font-size="11" fill="#60a5fa" text-anchor="start">clear winner</text>
+
+    <!-- canonical -->
+    <rect x="830" y="350" width="210" height="64" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="935" y="378" font-size="16" font-weight="700" fill="#f1f5f9">CANONICAL DEADLINE</text>
+    <text x="935" y="398" font-size="11" fill="#94a3b8">becomes a task you can complete</text>
+    <line x1="935" y1="414" x2="935" y2="468" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- answer -->
+    <rect x="830" y="470" width="210" height="64" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="935" y="498" font-size="16" font-weight="700" fill="#f1f5f9">DISCORD ANSWER</text>
+    <text x="935" y="518" font-size="11" fill="#94a3b8">no model call for a deadline read</text>
+
+    <!-- conflict branch -->
+    <path d="M 850 286 L 700 348" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+    <text x="736" y="308" font-size="11" fill="#f59e0b">no clear winner</text>
+
+    <rect x="560" y="350" width="210" height="64" rx="14" fill="#141d30" stroke="#f59e0b" stroke-width="2"/>
+    <text x="665" y="378" font-size="15" font-weight="700" fill="#f1f5f9">CONFLICTING EVIDENCE</text>
+    <text x="665" y="398" font-size="11" fill="#94a3b8">sources disagree, no tiebreaker</text>
+    <line x1="665" y1="414" x2="665" y2="468" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowWarm)"/>
+
+    <rect x="560" y="470" width="210" height="76" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="665" y="496" font-size="14" font-weight="700" fill="#f1f5f9">PRESERVE THE CONFLICT</text>
+    <text x="665" y="515" font-size="13" font-weight="600" fill="#cbd5e1">/ ASK WHEN IT MATTERS</text>
+    <text x="665" y="534" font-size="11" fill="#94a3b8">shown as disputed, planned safely</text>
+    <path d="M 770 508 L 828 508" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrowWarm)"/>
+
+    <!-- caption -->
+    <line x1="80" y1="600" x2="1120" y2="600" stroke="#1e293b" stroke-width="2"/>
+    <text x="600" y="636" font-size="16" fill="#e2e8f0">Every source's claim is kept. The answer is resolved from the evidence, not overwritten by the latest mention.</text>
+    <text x="600" y="662" font-size="12" fill="#64748b">A date known without a time stays a date without a time. The system does not invent 11:59 PM.</text>
+  </g>
+</svg>

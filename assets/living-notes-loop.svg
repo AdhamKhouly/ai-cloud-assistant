@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Living notes loop: slides, transcript, reading and notes enter the source registry, weekly synthesis builds living weekly notes; a new, changed or removed source marks the affected week stale and rebuilds it; generated notes are not source truth.">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#60a5fa"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#22d3ee"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" rx="18" fill="#0f172a"/>
+
+  <g font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" text-anchor="middle">
+
+    <!-- sources -->
+    <text x="555" y="34" font-size="12" fill="#64748b" letter-spacing="2">SOURCE MATERIAL</text>
+    <rect x="170" y="50" width="170" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="190" y="70" width="22" height="16" rx="2" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <text x="264" y="86" font-size="16" font-weight="600" fill="#f1f5f9">Slides</text>
+
+    <rect x="370" y="50" width="170" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <rect x="390" y="72" width="20" height="3" rx="1.5" fill="#60a5fa"/>
+    <rect x="390" y="79" width="24" height="3" rx="1.5" fill="#60a5fa"/>
+    <rect x="390" y="86" width="14" height="3" rx="1.5" fill="#60a5fa"/>
+    <text x="470" y="86" font-size="16" font-weight="600" fill="#f1f5f9">Transcript</text>
+
+    <rect x="570" y="50" width="170" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 590 70 L 604 70 L 610 76 L 610 92 L 590 92 Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round"/>
+    <text x="668" y="86" font-size="16" font-weight="600" fill="#f1f5f9">Reading</text>
+
+    <rect x="770" y="50" width="170" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <path d="M 790 90 L 794 76 L 808 72 L 804 86 Z" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linejoin="round"/>
+    <text x="866" y="86" font-size="16" font-weight="600" fill="#f1f5f9">Notes</text>
+
+    <line x1="255" y1="110" x2="440" y2="178" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="455" y1="110" x2="515" y2="178" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="655" y1="110" x2="595" y2="178" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="855" y1="110" x2="670" y2="178" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- registry -->
+    <rect x="380" y="180" width="350" height="66" rx="14" fill="#1e293b" stroke="#60a5fa" stroke-width="2"/>
+    <text x="555" y="208" font-size="17" font-weight="700" fill="#f1f5f9">SOURCE REGISTRY</text>
+    <text x="555" y="229" font-size="12" fill="#94a3b8">category, week, hash, present or removed</text>
+    <line x1="555" y1="246" x2="555" y2="308" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- synthesis -->
+    <rect x="380" y="310" width="350" height="66" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="555" y="338" font-size="17" font-weight="700" fill="#f1f5f9">WEEKLY SYNTHESIS</text>
+    <text x="555" y="359" font-size="12" fill="#94a3b8">model-assisted, one week at a time, from the current sources</text>
+    <line x1="555" y1="376" x2="555" y2="438" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- living notes -->
+    <rect x="380" y="440" width="350" height="76" rx="14" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="555" y="472" font-size="18" font-weight="700" fill="#f1f5f9">LIVING WEEKLY NOTES</text>
+    <text x="555" y="495" font-size="12" fill="#94a3b8">a versioned artifact that records which sources built it</text>
+
+    <!-- the loop -->
+    <path d="M 730 213 C 790 213, 800 236, 858 236" fill="none" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arrowCyan)"/>
+    <text x="800" y="205" font-size="11" fill="#22d3ee">registry notices</text>
+
+    <rect x="860" y="200" width="290" height="70" rx="14" fill="#141d30" stroke="#22d3ee" stroke-width="2"/>
+    <text x="1005" y="229" font-size="15" font-weight="700" fill="#f1f5f9">new / changed / removed source</text>
+    <text x="1005" y="250" font-size="12" fill="#94a3b8">any of the three counts</text>
+    <line x1="1005" y1="270" x2="1005" y2="308" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <rect x="860" y="310" width="290" height="60" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1005" y="336" font-size="15" font-weight="600" fill="#f1f5f9">mark the affected week stale</text>
+    <text x="1005" y="355" font-size="12" fill="#94a3b8">only that week, not everything</text>
+    <line x1="1005" y1="370" x2="1005" y2="408" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <rect x="860" y="410" width="290" height="60" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <text x="1005" y="436" font-size="15" font-weight="600" fill="#f1f5f9">rebuild that week</text>
+    <text x="1005" y="455" font-size="12" fill="#94a3b8">new version stored, old one kept</text>
+    <path d="M 860 440 C 800 440, 790 343, 732 343" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+    <!-- the forbidden path -->
+    <path d="M 380 478 C 240 478, 240 213, 378 213" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5 6" opacity="0.8"/>
+    <circle cx="242" cy="345" r="16" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="235" y1="338" x2="249" y2="352" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="249" y1="338" x2="235" y2="352" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="242" y="382" font-size="11" fill="#f59e0b" font-weight="600">never</text>
+
+    <!-- rule -->
+    <rect x="300" y="580" width="600" height="86" rx="16" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="600" y="616" font-size="21" font-weight="700" fill="#f59e0b">Generated notes != source truth</text>
+    <text x="600" y="642" font-size="13" fill="#cbd5e1">Output never re-enters the source pool. Notes follow the material; they do not become it.</text>
+  </g>
+</svg>

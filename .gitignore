@@ -1,0 +1,13 @@
+# This repository holds documentation and SVG diagrams only.
+# Nothing generated, nothing private, nothing from a machine.
+.DS_Store
+._*
+Thumbs.db
+*.log
+*.env
+.env
+node_modules/
+__pycache__/
+*.pyc
+# Rendered previews of the SVGs, if anyone makes them locally.
+*.png
